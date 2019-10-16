@@ -2,27 +2,27 @@
    { 
       "kota":"Surabaya",
       "dekat":[ 
-         "Gresik",
+         	 "Gresik",
 		 "Sidoarjo"
       ]
    },
    { 
       "kota":"Bangkalan",
       "dekat":[ 
-         "Sampang"
+         	 "Sampang"
       ]
    },
    { 
       "kota":"Sampang",
       "dekat":[ 
-         "Pamekasan",
+         	 "Pamekasan",
 		 "Bangkalan"
       ]
    },
    { 
       "kota":"Pamekasan",
       "dekat":[ 
-         "Sumenep",
+         	 "Sumenep",
 		 "Sampang"
       ]
    },
@@ -35,7 +35,7 @@
    { 
       "kota":"Gresik",
       "dekat":[ 
-         "Lamongan",
+         	 "Lamongan",
 		 "Mojokerto",
 		 "Sidoarjo",
 		 "Surabaya"
@@ -44,7 +44,7 @@
    { 
       "kota":"Sidoarjo",
       "dekat":[ 
-         "Mojokerto",
+         	 "Mojokerto",
 		 "Pasuruan",
 		 "Gresik",
 		 "Surabaya"
@@ -53,7 +53,7 @@
    { 
       "kota":"Lamongan",
       "dekat":[ 
-         "Gresik",
+         	 "Gresik",
 		 "Mojokerto",
 		 "Jombang",
 		 "Tuban",
@@ -63,14 +63,14 @@
    { 
       "kota":"Tuban",
       "dekat":[ 
-         "Bojonegoro",
+         	 "Bojonegoro",
 		 "Lamongan"
       ]
    },
    { 
       "kota":"Bojonegoro",
       "dekat":[ 
-         "Tuban",
+         	 "Tuban",
 		 "Lamongan",
 		 "Ngawi",
 		 "Madiun",
@@ -81,7 +81,7 @@
    { 
       "kota":"Ngawi",
       "dekat":[ 
-         "Bojonegoro",
+         	 "Bojonegoro",
 		 "Magetan",
 		 "Madiun"
       ]
@@ -89,7 +89,7 @@
    { 
       "kota":"Magetan",
       "dekat":[ 
-         "Ngawi",
+         	 "Ngawi",
 		 "Ponorogo",
 		 "Madiun"
       ]
@@ -97,7 +97,7 @@
    { 
       "kota":"Madiun",
       "dekat":[ 
-         "Ngawi",
+         	 "Ngawi",
 		 "Bojonegoro",
 		 "Magetan",
 		 "Nganjuk",
