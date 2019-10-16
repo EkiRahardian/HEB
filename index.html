@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <style>
 
@@ -39,7 +40,9 @@ var svg = d3.select("body").append("svg")
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
 
-d3.json("flare.json", function(error, classes) {
+var jsonfile = "https://raw.githubusercontent.com/EkiRahardian/HEB/master/kota.json";
+
+d3.json(jsonfile,function(error, classes) {
   if (error) throw error;
 
   var root = packageHierarchy(classes)
@@ -64,48 +67,47 @@ d3.json("flare.json", function(error, classes) {
       .text(function(d) { return d.data.key; });
 });
 
-// Lazily construct the package hierarchy from class names.
 function packageHierarchy(classes) {
   var map = {};
 
-  function find(name, data) {
-    var node = map[name], i;
+  function find(kota, data) {
+    var node = map[kota], i;
     if (!node) {
-      node = map[name] = data || {name: name, children: []};
-      if (name.length) {
-        node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
+      node = map[kota] = data || {name: kota, children: []};
+      if (kota.length) {
+        node.parent = find(kota.substring(0, i = kota.lastIndexOf(".")));
         node.parent.children.push(node);
-        node.key = name.substring(i + 1);
+        node.key = kota.substring(i + 1);
       }
     }
     return node;
   }
 
   classes.forEach(function(d) {
-    find(d.name, d);
+    find(d.kota, d);
   });
 
   return d3.hierarchy(map[""]);
 }
 
-// Return a list of imports for the given array of nodes.
+// Return a list of dekat for the given array of nodes.
 function packageImports(nodes) {
   var map = {},
-      imports = [];
+      dekat = [];
 
-  // Compute a map from name to node.
+  // Compute a map from kota to node.
   nodes.forEach(function(d) {
-    map[d.data.name] = d;
+    map[d.data.kota] = d;
   });
 
   // For each import, construct a link from the source to target node.
   nodes.forEach(function(d) {
-    if (d.data.imports) d.data.imports.forEach(function(i) {
-      imports.push(map[d.data.name].path(map[i]));
+    if (d.data.dekat) d.data.dekat.forEach(function(i) {
+      dekat.push(map[d.data.kota].path(map[i]));
     });
   });
 
-  return imports;
+  return dekat;
 }
 
 </script>
