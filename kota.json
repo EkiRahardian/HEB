@@ -2,7 +2,6 @@
    { 
       "kota":"Surabaya",
       "dekat":[ 
-         "Bangkalan",
          "Gresik",
 		 "Sidoarjo"
       ]
@@ -11,8 +10,6 @@
       "kota":"Bangkalan",
       "dekat":[ 
          "Sampang",
-		 "Gresik",
-		 "Surabaya"
       ]
    },
    { 
@@ -41,7 +38,6 @@
          "Lamongan",
 		 "Mojokerto",
 		 "Sidoarjo",
-		 "Bangkalan",
 		 "Surabaya"
       ]
    },
